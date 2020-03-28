@@ -12,6 +12,7 @@ Gem::Specification.new do |spec|
   spec.summary       = %q{Create phony servers}
   spec.description   = %q{Create fake servers fopr testing purposes}
   spec.homepage      = "https://github.com/mperham/phony_baloney"
+  spec.license       = "LGPL-3.0-only"
 
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = "https://github.com/mperham/phony_baloney"
