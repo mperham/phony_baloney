@@ -1,3 +1,3 @@
 require "bundler/setup"
 require "minitest/autorun"
-require "phony"
+require "phony_baloney"

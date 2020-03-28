@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    phony (0.1.0)
+    phony_baloney (0.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -15,7 +15,7 @@ PLATFORMS
 DEPENDENCIES
   bundler (~> 2.0)
   minitest (~> 5.0)
-  phony!
+  phony_baloney!
   rake (~> 13.0)
 
 RUBY VERSION

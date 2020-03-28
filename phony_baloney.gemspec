@@ -1,20 +1,20 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "phony/version"
+require "phony_baloney/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "phony"
-  spec.version       = Phony::VERSION
+  spec.name          = "phony_baloney"
+  spec.version       = PhonyBaloney::VERSION
   spec.authors       = ["Mike Perham"]
   spec.email         = ["mperham@gmail.com"]
 
   spec.summary       = %q{Create phony servers}
   spec.description   = %q{Create fake servers fopr testing purposes}
-  spec.homepage      = "https://github.com/mperham/phony"
+  spec.homepage      = "https://github.com/mperham/phony_baloney"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "https://github.com/mperham/phony"
+  spec.metadata["source_code_uri"] = "https://github.com/mperham/phony_baloney"
   #spec.metadata["changelog_uri"] = "TODO: Put your gem's CHANGELOG.md URL here."
 
   # Specify which files should be added to the gem when it is released.
