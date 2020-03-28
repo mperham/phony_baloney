@@ -1,4 +1,4 @@
-require "phony_baloney/version"
+require "phony/version"
 
-module PhonyBaloney
+module Phony
 end

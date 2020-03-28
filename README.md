@@ -1,4 +1,4 @@
-# phony_baloney
+# phony
 
 ## Purpose
 
@@ -19,10 +19,10 @@ which can replay a set of replies and assert the expected network chatter.
 ## API
 
 ```ruby
-require 'phony_baloney'
+require 'phony'
 require 'datadog/statsd'
 
-x = PhonyBaloney::Server::UDP.new(port: 8125)
+x = Phony::Server::UDP.new(port: 8125)
 x.run # kicks off a separate thread
 
 ds = Datadog::Statsd.new('localhost', 8125)
@@ -39,5 +39,5 @@ end
 Put this in your Gemfile:
 
 ```
-gem 'phony_baloney', group: :test
+gem 'phony', group: :test
 ```
