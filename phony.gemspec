@@ -8,6 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = Phony::VERSION
   spec.authors       = ["Mike Perham"]
   spec.email         = ["mperham@gmail.com"]
+  spec.license       = "LGPL-3.0-only"
 
   spec.summary       = %q{Create phony servers}
   spec.description   = %q{Create fake servers fopr testing purposes}
