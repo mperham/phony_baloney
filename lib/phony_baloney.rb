@@ -1,4 +1,2 @@
 require "phony_baloney/version"
-
-module PhonyBaloney
-end
+require "phony_baloney/server"

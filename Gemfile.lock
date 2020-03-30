@@ -6,6 +6,7 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
+    dogstatsd-ruby (4.7.0)
     minitest (5.14.0)
     rake (13.0.1)
 
@@ -14,6 +15,7 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (~> 2.0)
+  dogstatsd-ruby
   minitest (~> 5.0)
   phony_baloney!
   rake (~> 13.0)

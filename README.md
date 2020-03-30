@@ -22,15 +22,11 @@ which can replay a set of replies and assert the expected network chatter.
 require 'phony_baloney'
 require 'datadog/statsd'
 
-x = PhonyBaloney::Server::UDP.new(port: 8125)
-x.run # kicks off a separate thread
-
-ds = Datadog::Statsd.new('localhost', 8125)
-
-# this is UDP so there's no response
-x.expect("some.metric:1|c") do
+x = PhonyBaloney::Server::UDP.new(port: 8126)
+x.run do |input|
+  ds = Datadog::Statsd.new('localhost', 8126)
   ds.increment("some.metric")
-  # implicitly verifies the expectation at the end of the block
+  assert_equal "some.metric:1|c", input.nextline
 end
 ```
 
